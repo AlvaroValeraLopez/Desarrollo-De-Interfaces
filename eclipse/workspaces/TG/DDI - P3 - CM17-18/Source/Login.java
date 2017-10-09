@@ -16,7 +16,7 @@ import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
-import org.eclipse.wb.swing.FocusTraversalOnArray;
+
 import java.awt.Component;
 import java.awt.Toolkit;
 
@@ -127,10 +127,6 @@ public class Login {
 		btnEntrar.setBounds(201, 167, 164, 34);
 		frmLogin.getContentPane().add(btnEntrar);
 		
-		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("F:\\2\u00BA DAM\\Workspace\\Company\\img\\Amazon-Kindle-icon.png"));
-		lblNewLabel.setBounds(14, 134, 70, 70);
-		frmLogin.getContentPane().add(lblNewLabel);
-		frmLogin.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{userField, passwordField, btnEntrar}));
+		
 	}
 }

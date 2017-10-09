@@ -11,7 +11,7 @@ public class sqliteConnection {
 		try {
 			
 			Class.forName("org.sqlite.JDBC");
-			Connection conn = DriverManager.getConnection("jdbc:sqlite:bd\\jugadores.sqlite");
+			Connection conn = DriverManager.getConnection("jdbc:sqlite:db\\jugadores.sqlite");
 			JOptionPane.showMessageDialog(null, "Conexión establecida");		
 			return conn;
 			
