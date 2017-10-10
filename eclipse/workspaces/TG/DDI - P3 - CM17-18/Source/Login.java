@@ -39,7 +39,7 @@ public class Login {
 			}
 		});
 	}
-	//CREAMOS UN OBJETO PARA GUARDAR LA CONEXIÓN
+	//CREAMOS UN OBJETO PARA GUARDAR LA CONEXIï¿½N
 	Connection conn=null;
 	private JTextField userField;
 	private JPasswordField passwordField;
@@ -111,7 +111,7 @@ public class Login {
 						EmpleadoInfo emp1 = new EmpleadoInfo();
 						emp1.setVisible(true);
 					}else {
-						JOptionPane.showMessageDialog(null, "Usuario y contraseña incorrecta");
+						JOptionPane.showMessageDialog(null, "Usuario y contraseï¿½a incorrecta");
 						
 					}
 					rs.close();

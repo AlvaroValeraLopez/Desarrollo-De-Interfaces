@@ -324,7 +324,7 @@ public class EmpleadoInfo extends JFrame {
 		JButton InsertarBtn = new JButton("INSERTAR");
 		InsertarBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//EVENTO DE INSERTAR INFORMACIÓN EN BASE DE DATOS
+				//EVENTO DE INSERTAR INFORMACIï¿½N EN BASE DE DATOS
 				try {
 					String query = "INSERT INTO EmpleadoInfo (EID, Nombre, Apellidos, Salario) VALUES (?,?,?,?)";
 					
@@ -376,7 +376,7 @@ public class EmpleadoInfo extends JFrame {
 		EliminarBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 
-				int action=JOptionPane.showConfirmDialog(null, "¿Deseas eliminar el registro?", "CONFIRMACIÓN DE BORRADO", JOptionPane.YES_NO_OPTION);
+				int action=JOptionPane.showConfirmDialog(null, "ï¿½Deseas eliminar el registro?", "CONFIRMACIï¿½N DE BORRADO", JOptionPane.YES_NO_OPTION);
 				
 				try {
 					
