@@ -18,19 +18,19 @@ public class Modelo_CM {
 
 		try {
 
-			String sql = "SELECT * FROM jugadoresinfo WHERE USUARIO=? and PASSWORD=? and CAPITAN=1 ";
+			String sql = "SELECT NUM_FICHA, NOMBRE FROM jugadoresinfo WHERE USUARIO=? and PASSWORD=? and CAPITAN=1 ";
 			pst = con.prepareStatement(sql);
 			pst.setString(1, usuario);
 			pst.setString(2, contrasenia);
 			rs = pst.executeQuery();
-
-			comprobarEjecucionSql = true;
 			
+			comprobarEjecucionSql = true;
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			comprobarEjecucionSql = false;
 		}
-		
+
 		return comprobarEjecucionSql;
 
 	}
